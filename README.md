@@ -19,8 +19,7 @@ O algoritmo não apenas distribui turnos, mas garante:
 4. **Equidade:** Distribuição balanceada do número de escalas entre os funcionários disponíveis.
 
 ## 🚀 Como Executar
-1. Certifique-se de ter o Python e as dependências instaladas:
-   `pip install pandas ortools`
+1. Certifique-se de ter o Python e as dependências instaladas no requeriments.txt.
 2. Prepare os arquivos `e_disponibilidade.csv` e `e_restricoes.csv`.
 3. Execute o script principal:
    `python gerador_escala.py`
