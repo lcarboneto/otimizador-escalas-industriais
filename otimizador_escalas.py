@@ -21,8 +21,8 @@ CSV_RESTRICOES      = "restricoes_especificas.csv"
 ARQUIVO_SAIDA       = "escala_gerada_industrial.csv"
 
 # Parâmetros de Otimização
-DATA_INICIO             = "2026-04-01"
-DATA_FIM                = "2026-06-30"
+DATA_INICIO             = "2026-01-01"
+DATA_FIM                = "2026-11-30"
 MIN_GAP_ENTRE_EVENTOS   = 5   # Dias mínimos entre escalas do mesmo colaborador
 JANELA_ESPALHAMENTO      = 14  # Janela para cálculo de penalidade de proximidade
 MIN_ESCALAS_PADRAO      = 4   # Mínimo de escalas para colaboradores sem restrição mensal
