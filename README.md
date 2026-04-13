@@ -28,4 +28,4 @@ O algoritmo não apenas distribui turnos, mas garante:
 
 ---
 **Autor:** Luciano Carbone Neto  
-*Especialista em Analytics Industrial | Químico Responsável | Cientista de Dados*
+*Especialista em Analytics Industrial e Comercial | Cientista de Dados*
