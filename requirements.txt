@@ -1,0 +1,7 @@
+# Bibliotecas principais para manipulação de dados e otimização
+pandas>=2.0.0
+ortools>=9.6.0
+
+# Dependências auxiliares (geralmente instaladas automaticamente com as acima)
+numpy>=1.24.0
+python-dateutil>=2.8.2
