@@ -32,10 +32,10 @@ TEMPO_LIMITE_SOLVER     = 60  # Segundos
 
 # Definição de Turnos por Dia da Semana (0=Segunda, 6=Domingo)
 ESTRUTURA_TURNOS = {
-    1: [("Tarde", "SEG")],
-    2: [("Tarde", "TER")],
-    3: [("Noite", "QUA")],
-    4: [("Noite", "QUI")],
+    0: [("Tarde", "SEG")],
+    1: [("Tarde", "TER")],
+    2: [("Noite", "QUA")],
+    3: [("Noite", "QUI")],
     5: [("Noite", None)], # None indica que o evento será SI ou SP (Sábados)
     6: [("Manhã", "DM"), ("Noite", "DN")],
 }
@@ -180,10 +180,10 @@ def processar_otimizacao():
     status = solver.Solve(model)
 
     if status in (cp_model.OPTIMAL, cp_model.FEASIBLE):
-        print("✅ Escala otimizada gerada com sucesso!")
+        print("Escala otimizada gerada com sucesso!")
         exportar_resultados(solver, x, colaboradores, slots)
     else:
-        print("❌ Não foi possível encontrar uma solução que respeite todas as regras.")
+        print("Não foi possível encontrar uma solução que respeite todas as regras.")
 
 def exportar_resultados(solver, x, colaboradores, slots):
     """Gera o arquivo CSV final e exibe estatísticas no console."""
@@ -199,7 +199,7 @@ def exportar_resultados(solver, x, colaboradores, slots):
                 })
     
     pd.DataFrame(final).to_csv(ARQUIVO_SAIDA, index=False, encoding="utf-8-sig")
-    print(f"📊 Resultados salvos em: {ARQUIVO_SAIDA}")
+    print(f"Resultados salvos em: {ARQUIVO_SAIDA}")
 
 if __name__ == "__main__":
     processar_otimizacao()
