@@ -16,8 +16,8 @@ from collections import defaultdict
 # =============================================================================
 
 # Arquivos de entrada e saída
-CSV_DISPONIBILIDADE = "disponibilidade_colaboradores.csv"
-CSV_RESTRICOES      = "restricoes_especificas.csv"
+CSV_DISPONIBILIDADE = "e_disponibilidade.csv"
+CSV_RESTRICOES      = "e_restricoes.csv"
 ARQUIVO_SAIDA       = "escala_gerada_industrial.csv"
 
 # Parâmetros de Otimização
@@ -79,7 +79,7 @@ def validar_restricao_temporal(id_colab: int, slot: dict, lista_restricoes: list
     evento_slot = slot["evento"]
 
     for r in lista_restricoes:
-        if int(r["id_colaborador"]) != id_colab:
+        if int(r["id_funcionario"]) != id_colab:
             continue
         
         tipo = r.get("tipo", "").lower()
